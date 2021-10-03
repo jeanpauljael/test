@@ -1,0 +1,43 @@
+// tablet
+@media(max-width: 640px) {
+    
+}
+
+// small monitor view
+@media(max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        .nav-links {
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: $primaryColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // width: 50%;
+            transform: translateX(100%);
+            transition: transform 1.5s ease-in;
+
+            li {
+                opacity: 0;
+            }
+        }
+        .burger {
+            display: block;
+        }
+    }
+}
+
+// medium monitor
+@media(max-width: 1200px) {
+    
+}
+
+// large monitor
+@media(max-width: 1440px) {
+    
+}
