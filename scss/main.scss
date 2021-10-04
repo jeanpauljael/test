@@ -8,35 +8,60 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.logo {
+
+}
+
 // nav bar =============================================================
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;
+    height: 100px;
+    width: 100%;
     background-color: $white;
-    margin-top: 10px;
     border-bottom: 1px solid $borderColor;
-    box-shadow: 0 5px 5px rgb(194, 194, 194);
 
     .nav-links {
         display: flex;
+        float: right;
         text-transform: uppercase;
+        text-align: center;
+        align-items: center;
         justify-content: space-around;
         width: 40%;
-        
-        a {
-            color: $black;
-            text-decoration: none;
-
-            &:hover {
-                color: $primaryColor;
-            }
-        }
+        height: 8vh;
 
         li {
             list-style: none;
-            
+            line-height: 100px;
+            width: 100%;
+
+            a {
+                color: $black;
+                text-decoration: none;
+                height: 100%;
+                width: 100%;
+    
+                &:hover {
+                    color: $hoverOverlayColor;
+                }
+            }
+        }
+
+        .active {
+            background-color: $primaryColor;
+            transform: skewX(-20deg);
+            // width: 2em;
+            // height: 100px;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+        
+            a {
+                color: white;
+        
+            }
         }
     }
 
@@ -53,6 +78,8 @@ nav {
         transition: all 0.3s ease;
     }
 }
+
+
 
 .nav-active {
     transform: translateX(0%) !important;
@@ -169,7 +196,7 @@ nav {
                 border: 2px solid $imageBorderColor;
                 position: relative;
                 cursor: pointer;
-                height: 50%;
+                height: 100%;
 
                 img {
                     width: 100%;

@@ -5,6 +5,11 @@
 
 // small monitor view
 @media(max-width: 1024px) {
+    
+}
+
+// medium monitor
+@media(max-width: 1285px) {
     body {
         overflow-x: hidden;
     }
@@ -38,11 +43,6 @@
         padding: 1em;
         grid-row-gap: 1em;
     }
-}
-
-// medium monitor
-@media(max-width: 1200px) {
-    
 }
 
 // large monitor

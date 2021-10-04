@@ -20,31 +20,47 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  height: 100px;
+  width: 100%;
   background-color: #fff;
-  margin-top: 10px;
   border-bottom: 1px solid #bec2c5;
-  box-shadow: 0 5px 5px #c2c2c2;
 }
 
 nav .nav-links {
   display: flex;
+  float: right;
   text-transform: uppercase;
+  text-align: center;
+  align-items: center;
   justify-content: space-around;
   width: 40%;
-}
-
-nav .nav-links a {
-  color: #000;
-  text-decoration: none;
-}
-
-nav .nav-links a:hover {
-  color: #00a7e0;
+  height: 8vh;
 }
 
 nav .nav-links li {
   list-style: none;
+  line-height: 100px;
+  width: 100%;
+}
+
+nav .nav-links li a {
+  color: #000;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+nav .nav-links li a:hover {
+  color: #147da0;
+}
+
+nav .nav-links .active {
+  background-color: #00a7e0;
+  transform: skewX(-20deg);
+}
+
+nav .nav-links .active a {
+  color: white;
 }
 
 nav .burger {
@@ -171,7 +187,7 @@ nav .burger > div {
   border: 2px solid #38b7e3;
   position: relative;
   cursor: pointer;
-  height: 50%;
+  height: 100%;
 }
 
 .mainContentWrapper article .galleryWrapper .asset img {
@@ -212,7 +228,7 @@ nav .burger > div {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1285px) {
   body {
     overflow-x: hidden;
   }
