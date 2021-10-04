@@ -14,13 +14,14 @@
             right: 0px;
             height: 92vh;
             top: 8vh;
-            background-color: $primaryColor;
+            background-color: $white;
             display: flex;
             flex-direction: column;
             align-items: center;
-            // width: 50%;
             transform: translateX(100%);
-            transition: transform 1.5s ease-in;
+            transition: transform 0.5s ease-in;
+            border-left: 1px solid $primaryColor;
+            z-index: 5;
 
             li {
                 opacity: 0;
@@ -29,6 +30,13 @@
         .burger {
             display: block;
         }
+    }
+
+    .mainContentWrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        padding: 1em;
+        grid-row-gap: 1em;
     }
 }
 

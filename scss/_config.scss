@@ -1,8 +1,19 @@
 $primaryColor: #00a7e0;
 $secondaryColor: #e4e2e2;
-$tertiaryColor: #343e48;
+// $tertiaryColor: #343e48;
 $imageBorderColor: #38b7e3;
 $hoverOverlayColor: #147da0;
 $borderColor: #bec2c5;
 $black: #000;
 $white: #fff;
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

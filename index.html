@@ -9,27 +9,80 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
   </head>
   <body>
-
+    <!-- navbar main-->
     <nav>
       <div class="logo">
         <img src="img/leaselabs_logo_fullstack_rgb.png" alt="" />
       </div>
-      <ul class="nav-links">
-          <li><a href="#">home</a></li>
-          <li><a href="#">our work</a></li>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">contact us</a></li>
-          <li><a href="#">specials</a></li>
+      <ul id="nav-links" class="nav-links">
+          <li class="nav-item"><a href="#home">home</a></li>
+          <li class="nav-item"><a href="#ourwork">our work</a></li>
+          <li class="nav-item"><a href="#aboutus">about us</a></li>
+          <li class="nav-item"><a href="#contactus">contact us</a></li>
+          <li class="nav-item"><a href="#specials">specials</a></li>
       </ul>
 
+      <!-- burger menu for mobile view-->
       <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
       </div>
-
     </nav>
 
-    <script src="/app.js"></script>
+    <!-- main content -->
+    <section class="mainContentWrapper">
+        <!-- left content -->
+        <aside>
+            <div class="sideNavContent">
+                <div class="sideNavHeader">Subnav</div>
+                <ul class="sideNavLinks">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="sideNavContent">
+                <div class="sideNavHeader">Related Links</div>
+                <ul class="sideNavLinks">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    
+        <!-- right content -->
+        <article>
+            <h1>Heading 1</h1>
+            <h2>heading 2</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            maximus interdum rhoncus. Curabitur dictum est sit amet turpis auctor
+            facilisis. Phasellus nec suscipit mi. In eget egestas risus. Aliquam
+            erat volutpat. Duis euismod scelerisque orci, nec imperdiet lacus
+            laoreet ac. Integer auctor massa tristique neque tincidunt blandit vel
+            in augue.
+            </p>
+            <p>
+            Morbi vel diam vel arcu tincidunt rhoncus eget id mi. Vivamus sit amet
+            semper nunc. Sed eget massa nec nulla lobortis vulputate sed id felis.
+            Aenean finibus mattis lorem, eget laoreet orci ornare quis. Praesent
+            ac mattis purus, ut porttitor tortor. Cras et condimentum velit.
+            </p>
+            <p>
+            Donec viverra sem eu sapien feugiat accumsan. Vivamus ullamcorper
+            augue tempor sem dapibus pulvinar. Pellentesque ac nunc euismod,
+            lobortis eros vitae, bibendum ex. Aliquam vitae justo turpis. Praesent
+            ex orci, ullamcorper et eros in, euismod gravida tellus. Nullam sed
+            sapien dictum, eleifend mauris et, placerat odio. Aliquam quis sapien
+            nisl.
+            </p>
+    
+            <div class="galleryWrapper"></div>
+        </article>
+    </section>
+
+    <script src="/js/app.js"></script>
   </body>
 </html>
