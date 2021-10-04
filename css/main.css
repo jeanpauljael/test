@@ -177,7 +177,7 @@ nav .burger > div {
 
 .mainContentWrapper article .galleryWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
   grid-auto-rows: auto;
   grid-gap: 1em;
   margin-top: 3em;
@@ -193,7 +193,7 @@ nav .burger > div {
 .mainContentWrapper article .galleryWrapper .asset img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -211,6 +211,7 @@ nav .burger > div {
   align-items: center;
   justify-content: center;
   background-color: #00a7e0;
+  color: #fff;
 }
 
 .mainContentWrapper article .galleryWrapper .asset .overlay h4 {
@@ -228,7 +229,7 @@ nav .burger > div {
   width: 100%;
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1300px) {
   body {
     overflow-x: hidden;
   }
